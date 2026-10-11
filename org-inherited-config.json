@@ -40,6 +40,19 @@
       "prBodyNotes": [
         "**Before merging an analytics v2 upgrade:** configure and verify this website's GTM consent gates. GA4 and Microsoft Clarity must only initialize after explicit analytics consent."
       ]
+    },
+    {
+      "description": [
+        "Temporarily create analytics v2.1.0 PRs for a manual, focused lockfile repair."
+      ],
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "@webriseottawa/analytics"
+      ],
+      "matchNewValue": "/^\\^?2\\.1\\.0$/",
+      "skipArtifactsUpdate": true
     }
   ]
 }
