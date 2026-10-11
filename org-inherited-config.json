@@ -1,0 +1,38 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": [
+    "Only propose updates to @webriseottawa/analytics; merging remains manual."
+  ],
+  "onboarding": false,
+  "requireConfig": "optional",
+  "enabledManagers": [
+    "npm"
+  ],
+  "automerge": false,
+  "dependencyDashboard": false,
+  "lockFileMaintenance": {
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "description": "Disable updates for every dependency by default.",
+      "matchPackageNames": [
+        "*"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "Allow only the WebRise analytics npm package.",
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "@webriseottawa/analytics"
+      ],
+      "enabled": true,
+      "rangeStrategy": "bump",
+      "automerge": false,
+      "minimumReleaseAge": "0 days"
+    }
+  ]
+}
