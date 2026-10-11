@@ -32,7 +32,10 @@
       "enabled": true,
       "rangeStrategy": "bump",
       "automerge": false,
-      "minimumReleaseAge": "0 days"
+      "minimumReleaseAge": "0 days",
+      "prBodyNotes": [
+        "**Before merging an analytics v2 upgrade:** configure and verify this website's GTM consent gates. GA4 and Microsoft Clarity must only initialize after explicit analytics consent."
+      ]
     }
   ]
 }
