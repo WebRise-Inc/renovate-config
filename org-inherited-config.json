@@ -15,14 +15,18 @@
   },
   "packageRules": [
     {
-      "description": "Disable updates for every dependency by default.",
+      "description": [
+        "Disable updates for every dependency by default."
+      ],
       "matchPackageNames": [
         "*"
       ],
       "enabled": false
     },
     {
-      "description": "Allow only the WebRise analytics npm package.",
+      "description": [
+        "Allow only the WebRise analytics npm package."
+      ],
       "matchDatasources": [
         "npm"
       ],
